@@ -1,0 +1,5 @@
+train: D:\\iNeuron_pvt_ltd\Main_Projects\\CV\\ISD_YOLOV7\\train.txt
+val: D:\\iNeuron_pvt_ltd\Main_Projects\\CV\\ISD_YOLOV7\\val.txt
+
+nc: 5
+names: ["Helmet", "Goggles", "Jacket", "Gloves", "Footwear"]
