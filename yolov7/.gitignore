@@ -54,6 +54,7 @@ val2017.zip
 
 # Neural Network weights -----------------------------------------------------------------------------------------------
 *.weights
+*.pt
 *.pb
 *.onnx
 *.engine
@@ -260,7 +261,3 @@ com_crashlytics_export_strings.xml
 crashlytics.properties
 crashlytics-build.properties
 fabric.properties
-yolov7.pt
-traced_model.pt
-best.pt
-my_model.pt
