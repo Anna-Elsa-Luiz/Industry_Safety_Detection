@@ -49,7 +49,7 @@ class TrainPipeline:
 
     
     
-    
+
     def start_data_validation(
         self, data_ingestion_artifact: DataIngestionArtifact
     ) -> DataValidationArtifact:
@@ -73,10 +73,7 @@ class TrainPipeline:
 
         except Exception as e:
             raise isdException(e, sys) from e
-
-
     
-
 
 
     def start_model_trainer(self
@@ -90,6 +87,7 @@ class TrainPipeline:
 
         except Exception as e:
             raise isdException(e, sys)
+        
 
 
 
@@ -99,10 +97,9 @@ class TrainPipeline:
             data_ingestion_artifact  = self.start_data_ingestion()
             data_validation_artifact = self.start_data_validation(
                 data_ingestion_artifact=data_ingestion_artifact
-            )
+            ) 
             if data_validation_artifact.validation_status == True:
-                model_trainer_artifact=self.start_model_trainer()
-            
+                model_trainer_artifact = self.start_model_trainer()
             
         except Exception as e:
             raise isdException(e, sys)    
